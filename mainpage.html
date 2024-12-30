@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="slideshow.css">
+    <link rel="stylesheet" href="recentdeals.css">
+    <title>Fly Away - Website</title>
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">
+                  <img src="images/Logo.png" alt="Web dev creative logo" />
+                  <span>Fly Away</span>
+                </a>
+            </div>
+            <ul class="links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#services">Services</a></li>
+            </ul>
+            <a href="#" class="action_btn">Get started</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#" class="action_btn">Get started</a></li>
+        </div>
+    </header>
+
+    <!-- Slideshow Section -->
+    <div class="sliderContainer">
+        <div class="slider">
+            <img src="https://picsum.photos/id/58/1920/1080" alt="">
+            <img src="https://picsum.photos/id/28/1920/1080" alt="">
+            <img src="https://picsum.photos/id/34/1920/1080" alt="">
+            <img src="https://picsum.photos/id/1/1920/1080" alt="">
+            <img src="https://picsum.photos/id/8/1920/1080" alt="">
+        </div>
+        <div class="textOverlay">
+            <h1>Explore the World's Most Breathtaking Destinations!</h1>
+            <a href="#explore" class="explore_btn">Explore</a>
+        </div>
+        <i class="fa-solid fa-arrow-right rightArrow arrow"></i>
+        <i class="fa-solid fa-arrow-left leftArrow arrow"></i>
+    </div>
+
+    
+
+    <script src="slideshow.js"></script>
+    <script>
+        // Navbar dropdown toggle
+        const toggleBtn = document.querySelector(".toggle_btn");
+        const toggleBtnIcon = document.querySelector(".toggle_btn i");
+        const dropDownMenu = document.querySelector(".dropdown_menu");
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle("open");
+            const isOpen = dropDownMenu.classList.contains("open");
+
+            toggleBtnIcon.classList = isOpen
+                ? "fa-solid fa-xmark" 
+                : "fa-solid fa-bars"; 
+        };
+    </script>
+</body>
+</html>
