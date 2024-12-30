@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="slideshow.css">
+    <link rel="stylesheet" href="recentdeals.css">
+    <link rel="stylesheet" href="whyus.css">
+    <link rel="stylesheet" href="explore.css">
+    <link rel="stylesheet" href="stats.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="review.css">
+    <link rel="stylesheet" href="destination.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Fly Away - Website</title>
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <header>
+        <div id="home">
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">
+                  <img src="images/Logo.png" alt="Web dev creative logo" />
+                  <span>Fly Away</span>
+                </a>
+            </div>
+            <ul class="links">
+                <li><a href="#slideshoww">Home</a></li>
+                <li><a href="#slideshoww">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- <li><a href="#services">Services</a></li> -->
+            </ul>
+            <a href="login.html" class="action_btn">Get started</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+        <div class="dropdown_menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#home">About</a></li>
+            <li><a href="#contact-container">Contact</a></li>
+            <!-- <li><a href="#services">Services</a></li> -->
+            <li><a href="#" class="action_btn">Get started</a></li>
+        </div>
+    </header>
+
+    <!-- Slideshow Section -->
+    <div class="sliderContainer" id="slideshoww">
+        <div class="slider">
+            <img src="images/bb13c29e-4bec-40c2-8325-fb2f3d1185dc.jpg" alt="" width="100%" height="auto" >
+            <img src="images/I’m A 19-Year-Old Turkish Guy Who Turns His Dreams Into Pictures (48 Pics).jpg" alt="" width="100%" height="auto" >
+            <img src="images/Beautiful Flower Wallpapers --Shinecoco_com.jpg" alt="" >
+            <img src="images/95c690a5-3ad8-4b7a-b6a6-16c476651a6f.jpg" alt="" >
+            <img src="images/🫶🏻.jpg" alt="" >
+        </div>
+        <div class="textOverlay">
+            <h1>Explore the World's Most Breathtaking Destinations!</h1>
+            <a href="#explore" class="explore_btn">Explore</a>
+        </div>
+        <i class="fa-solid fa-arrow-right rightArrow arrow"></i>
+        <i class="fa-solid fa-arrow-left leftArrow arrow"></i>
+    </div>
+
+    <!-- Recent deals -->
+<div class="deals-section">
+    <h2>Recent Deals</h2>
+    <button class="toggle-button" onclick="toggleDeals()">Show/Hide Deals</button>
+    <div class="deals-container" id="deals-container">
+    
+      <!-- Deal Card 1 -->
+      <a href="goa_itin.html" class="deal-card">
+        <img src="images/goa.jpg" alt="Goa Beach Vacation">
+        <div class="discount-badge">-25%</div>
+        <div class="info">
+          <h3>Goa Beach Vacation</h3>
+          <p>7 days from <span class="original-price">₹45,000</span> <span class="price">₹33,750</span></p>
+        </div>
+      </a>
+    
+      <!-- Deal Card 2 -->
+      <a href="rajasthan.html" class="deal-card">
+        <img src="images/rajasthan.jpg" alt="Rajasthan Heritage Tour">
+        <div class="discount-badge">-10%</div>
+        <div class="info">
+          <h3>Rajasthan Heritage Tour</h3>
+          <p>10 days from <span class="original-price">₹70,000</span> <span class="price">₹63,000</span></p>
+        </div>
+      </a>
+    
+      <!-- Deal Card 3 -->
+      <a href="kerela.html" class="deal-card">
+        <img src="images/kerela.jpg" alt="Kerala Backwaters Adventure">
+        <div class="discount-badge">-50%</div>
+        <div class="info">
+          <h3>Kerala Backwaters Adventure</h3>
+          <p>5 days from <span class="original-price">₹40,000</span> <span class="price">₹20,000</span></p>
+        </div>
+      </a>
+    
+      <!-- Deal Card 4 -->
+      <a href="himacahal.html" class="deal-card">
+        <img src="images/himachal.jpg" alt="Himachal Trekking Expedition">
+        <div class="discount-badge">-30%</div>
+        <div class="info">
+          <h3>Himachal Trekking Expedition</h3>
+          <p>12 days from <span class="original-price">₹60,000</span> <span class="price">₹42,000</span></p>
+        </div>
+      </a>
+    
+    </div>
+    
+    <div class="deals-container" id="deals-container-duplicate">
+      <!-- Deal Card 1 (duplicated with new content) -->
+      <a href="ladakh.html" class="deal-card">
+        <img src="images/ladakh.jpg" alt="Ladakh Adventure Tour">
+        <div class="discount-badge">-20%</div>
+        <div class="info">
+          <h3>Ladakh Adventure Tour</h3>
+          <p>8 days from <span class="original-price">₹50,000</span> <span class="price">₹40,000</span></p>
+        </div>
+      </a>
+    
+      <!-- Deal Card 2 (duplicated with new content) -->
+      <a href="andaman.html" class="deal-card">
+        <img src="images/Andaman Sea, Thailand.jpg" alt="Andaman Island Getaway">
+        <div class="discount-badge">-15%</div>
+        <div class="info">
+          <h3>Andaman Island Getaway</h3>
+          <p>6 days from <span class="original-price">₹60,000</span> <span class="price">₹51,000</span></p>
+        </div>
+      </a>
+    
+      <a href="uttrakhand.html" class="deal-card">
+        <img src="images/uttrakhand.jpg" alt="Uttarakhand Nature Retreat">
+        <div class="discount-badge">-30%</div>
+        <div class="info">
+          <h3>Uttarakhand Nature Retreat</h3>
+          <p>5 days from <span class="original-price">₹30,000</span> <span class="price">₹21,000</span></p>
+        </div>
+      </a>
+    
+      <!-- Deal Card 4 (duplicated with new content) -->
+      <a href="kashmir.html" class="deal-card">
+        <img src="images/Kashmir.jpg" alt="Kashmir Valley Tour">
+        <div class="discount-badge">-35%</div>
+        <div class="info">
+          <h3>Kashmir Valley Tour</h3>
+          <p>7 days from <span class="original-price">₹55,000</span> <span class="price">₹35,750</span></p>
+        </div>
+      </a>
+    </div>
+  </div>
+  
+      <!-- Why Choose Us Section -->
+<div class="why-choose-us-section">
+    <h2>Why Choose Us</h2>
+    <div class="why-choose-us-container">
+        <div class="why-choose-us-card">
+            <img src="images/Download Plan map Vector Icon for free.jpg" alt="Handpicked Adventures Icon">
+            <h3>Handpicked Adventures</h3>
+            <p>We curate the best travel experiences to ensure every trip is unique, exciting, and tailored to you.</p>
+        </div>
+        <div class="why-choose-us-card">
+            <img src="images/Download Dealing Doodle Icon Illustration for free.jpg" alt="Exclusive Deals Icon">
+            <h3>Exclusive Deals</h3>
+            <p>Get access to deals and offers that you won’t find anywhere else. Save big on your next adventure!</p>
+        </div>
+        <div class="why-choose-us-card">
+            <img src="images/Premium Vector _ Vintage travel suitcase hand drawn outline doodle icon_ Holiday trip, baggage and luggage, journey concept.jpg" alt="Personalized Trips Icon">
+            <h3>Personalized Itineraries</h3>
+            <p>Plan your journey based on your interests, from tranquil escapes to thrilling adventures, we cover it all.</p>
+        </div>
+    </div>
+</div>
+
+<!--Parallax-->
+<div id="explore">
+<div class="parallax-wrapper">
+    <div class="maincontainer">
+        
+            <h1>Explore the World</h1>
+            <p>Discover the most popular destinations around the world. Just type in a location, and we'll show you the top attractions. Start your journey now by searching for your next adventure!</p>
+        
+        
+        <div class="search-container">
+            <input type="text" id="location-input" placeholder="Enter a location...">
+            <button id="search-button">Search</button>
+        </div>
+
+        <div id="results">
+            <!-- Results will appear here -->
+        </div>
+    </div>
+</div>
+</div>
+
+<!--photo gallery-->
+<div class="section-title">
+    <h1> Photo Gallery</h1>
+</div>
+<div class="section-sub-title">
+    <p>Discover breathtaking moments from our recent tours and adventures. Here are some of our favorite memories captured during these trips.</p>
+</div>
+
+<div class="topwear-tabs">
+    <div class="tab-cont">
+        <div class="tab" id="tabs">
+            <button class="tablinks active" onclick="openTab(event, 'polo')">Mountain</button>
+            <button class="tablinks" onclick="openTab(event, 'shirts')">Beaches</button>
+            <button class="tablinks" onclick="openTab(event, 'oversized')">Historical</button>
+        </div>
+    </div>
+
+    <div id="polo" class="tab-content">
+        <a href="#">
+            <div class="image-overlay-container">
+                <img src="images/Alps Snow Mountain Sunset Clouds iPhone Wallpaper.jpg" alt="Mountain Image 1">
+                <div class="overlay">
+                    <p>View Details</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="image-overlay-container">
+                <img src="images/It's a beautiful world.jpg" alt="Mountain Image 1">
+                <div class="overlay">
+                    <p>View Details</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="image-overlay-container">
+                <img src="images/📍colorado.jpg" alt="Mountain Image 1" >
+                <div class="overlay">
+                    <p>View Details</p>
+                </div>
+            </div>
+        </a>
+
+        
+        
+    </div>
+
+    <div id="shirts" class="tab-content">
+        <a href="#">
+            <div class="image-overlay-container">
+                <img src="images/12 Beautiful Shelling Beaches In Florida (1).jpg" alt="Beach Image 1">
+                <div class="overlay">
+                    <p>View Details</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="image-overlay-container">
+                <img src="images/Local Experts.jpg" alt="Beach Image 1">
+                <div class="overlay">
+                    <p>View Details</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="image-overlay-container">
+                <img src="images/Oahu Instagram Spots_ 23 Beautiful Photography Destinations ⋆ We Dream of Travel Blog (1).jpg" alt="Beach Image 1">
+                <div class="overlay">
+                    <p>View Details</p>
+                </div>
+            </div>
+        </a>
+
+        
+    </div>
+
+    <div id="oversized" class="tab-content">
+        <a href="#">
+            <div class="image-overlay-container">
+                <img src="images/0f98cf26-b0e4-4c5e-a7dc-2f3c6c92da87.jpg" alt="Historical Image 1">
+                <div class="overlay">
+                    <p>View Details</p>
+                </div>
+            </div>
+        </a>
+        
+        <a href="#">
+            <div class="image-overlay-container">
+                <img src="images/25 Iconic Places to Visit in Mumbai You Won’t Want to Miss - Hippie In Heels.jpg" alt="Historical Image 1">
+                <div class="overlay">
+                    <p>View Details</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="image-overlay-container">
+                <img src="images/30 Reasons I Would Rather Be From Delhi Than Anywhere Else.jpg" alt="Historical Image 1">
+                <div class="overlay">
+                    <p>View Details</p>
+                </div>
+            </div>
+        </a>
+        
+    </div>
+</div>
+
+<!-- Statistics Section -->
+<div class="stats-container">
+    <div class="stat-box">
+        <div class="icon"><i class="fa-solid fa-clock"></i></div>
+        <div class="counter-number" data-target="1">0</div>
+        <p>Years of Experience</p>
+    </div>
+    <div class="stat-box">
+        <div class="icon"><i class="fa-solid fa-search"></i></div>
+        <div class="counter-number" data-target="52">0</div>
+        <p>Tour Packages</p>
+    </div>
+    <div class="stat-box">
+        <div class="icon"><i class="fa-solid fa-user"></i></div>
+        <div class="counter-number" data-target="93">0</div>
+        <p>Happy Customers</p>
+    </div>
+    <div class="stat-box">
+        <div class="icon"><i class="fa-solid fa-phone"></i></div>
+        <div class="counter-number" data-target="273">0</div>
+        <p>Days Support</p>
+    </div>
+</div>
+<!--parallax-->
+<div class="parallax-bg">
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-item">
+                <div class="review">
+                    <div class="stars">★★★★★</div>
+                    <p>The Taj Mahal is a must-visit for anyone exploring India. The intricate marble work and the serene Yamuna River backdrop are unforgettable.</p>
+                    <div class="user">
+                        <img src="images/goa.jpg" alt="User 1">
+                        <div>
+                            <h4>Aarav Patel</h4>
+                            <span>2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="review">
+                    <div class="stars">★★★★★</div>
+                    <p>Jaipur's Amer Fort is stunning, especially during sunset. The architecture and the views from the top are worth every step.</p>
+                    <div class="user">
+                        <img src="images/kerela.jpg" alt="User 2">
+                        <div>
+                            <h4>Priya Sharma</h4>
+                            <span>5 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="review">
+                    <div class="stars">★★★★★</div>
+                    <p>Goa offers the best beach experience in India. The vibrant culture, beautiful beaches, and amazing food make it unforgettable!</p>
+                    <div class="user">
+                        <img src="images/rajasthan.jpg" alt="User 3">
+                        <div>
+                            <h4>Rohit Verma</h4>
+                            <span>1 week ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="review">
+                    <div class="stars">★★★★★</div>
+                    <p>Kerala's backwaters are serene and picturesque. The houseboat ride through the tranquil waters was the highlight of our trip.</p>
+                    <div class="user">
+                        <img src="images/ladakh.jpg" alt="User 4">
+                        <div>
+                            <h4>Anjali Menon</h4>
+                            <span>3 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="review">
+                    <div class="stars">★★★★★</div>
+                    <p>Manali's snow-covered peaks and scenic views are breathtaking. Perfect destination for adventure and relaxation alike.</p>
+                    <div class="user">
+                        <img src="images/uttrakhand.jpg" alt="User 5">
+                        <div>
+                            <h4>Vikram Singh</h4>
+                            <span>4 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+    </div>
+</div>
+
+<footer>
+    <!-- Contact Container -->
+<div id="contact">
+    <div class="contact-container">
+        <div class="footer-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>FIND US</h3>
+            <p>Address line<br>Chitkara University</p>
+        </div>
+        <div class="footer-item">
+            <i class="fa-solid fa-phone"></i>
+            <h3>CALL US</h3>
+            <p>+91 5682920790</p>
+        </div>
+        <div class="footer-item">
+            <i class="fa-solid fa-envelope"></i>
+            <h3>EMAIL US</h3>
+            <p>FlyAway@email.com</p>
+        </div>
+        <div class="footer-item">
+            <i class="fa-solid fa-hashtag"></i>
+            <h3>FOLLOW US</h3>
+            <p>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </p>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer Links, Logo, and Payment Section -->
+    <div class="footer-links">
+        <nav class="footer-nav">
+            <a href="#">HOME</a> |
+            <a href="#">THIS WEEK'S DEALS</a> |
+            <a href="#">LOGIN</a> |
+            <a href="#">CONTACT</a> |
+            <a href="#">TERMS OF USE</a> |
+            <a href="#">PRIVACY POLICY</a>
+        </nav>
+        <div class="footer-logo">
+            <!-- <img src="https://via.placeholder.com/100x25" alt="Logo" /> -->
+            <p>&copy; 2020 GoAdventure. All rights reserved</p>
+        </div>
+        <div class="payment-icons">
+            <a href="#"><i class="fa-brands fa-cc-visa"></i></a>
+            <a href="#"><i class="fa-brands fa-cc-mastercard"></i></a>
+            <a href="#"><i class="fa-brands fa-paypal"></i></a>
+        </div>
+    </div>
+
+    <!-- Map Section -->
+    <div class="footer-map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.572157158857!2d-0.12775808426425682!3d51.507351479634716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b33208c95a1%3A0xc28b334c82b3c45d!2sLondon%2C%20UK!5e0!3m2!1sen!2s!4v1605028894500!5m2!1sen!2s"
+            width="100%"
+            height="200"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            aria-label="Google Map of London, UK"
+        ></iframe>
+    </div>
+</footer>
+
+
+
+<script src="index.js"></script>
+<script src="review.js"></script>
+<script src="explore.js"></script>
+<!-- <script src="parallax.js"></script> -->
+
+
+<script>
+        // JavaScript for Slideshow Functionality
+        const rightArrow = document.querySelector(".rightArrow");
+        const leftArrow = document.querySelector(".leftArrow");
+        const slider = document.querySelector(".slider");
+        const images = document.querySelectorAll(".slider img");
+        
+        let currentImg = 0; // Start with the first image
+        let autoSlideTimeout;
+        
+        // Function to update the displayed image based on `currentImg` index
+        function updateImage() {
+            // Loop to first image if exceeding the number of images
+            if (currentImg >= images.length) {
+                currentImg = 0;
+            }
+            // Loop to last image if going below 0
+            else if (currentImg < 0) {
+                currentImg = images.length - 1;
+            }
+        
+            // Calculate the transform position for the slider to show only the current image
+            slider.style.transform = `translateX(${-currentImg * 100}vw)`;
+        
+            // Set timeout for auto-slide after manual interaction
+            autoSlideTimeout = setTimeout(() => {
+                currentImg++;
+                updateImage();
+            }, 3500); // Slide every 3.5 seconds
+        }
+        
+        // Right arrow click event
+        rightArrow.addEventListener("click", () => {
+            currentImg++;
+            clearTimeout(autoSlideTimeout); // Clear the timeout to prevent overlap
+            updateImage();
+        });
+        
+        // Left arrow click event
+        leftArrow.addEventListener("click", () => {
+            currentImg--;
+            clearTimeout(autoSlideTimeout); // Clear the timeout to prevent overlap
+            updateImage();
+        });
+        
+        // Start the slideshow
+        updateImage();
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll('.counter-number');
+    const speed = 200; // Control speed of counting
+
+    // Function to animate the counter number
+    const countUp = (counter) => {
+        const target = +counter.getAttribute('data-target');
+        const current = +counter.innerText;
+        const increment = target / speed;
+
+        if (current < target) {
+            counter.innerText = Math.ceil(current + increment);
+            setTimeout(() => countUp(counter), 20);
+        } else {
+            counter.innerText = target;
+        }
+    };
+
+    // Intersection Observer to trigger counting when element is in view
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counter = entry.target;
+                countUp(counter);
+                observer.unobserve(counter); // Stop observing once animation is done
+            }
+        });
+    }, { threshold: 0.5 });
+
+    counters.forEach(counter => {
+        observer.observe(counter);
+    });
+});
+
+// destination
+window.onload = function () {
+            document.querySelector(".tablinks.active").click();
+        };
+
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+
+        window.addEventListener('scroll', function() {
+    let parallaxWrapper = document.querySelector('.parallax-wrapper');
+    let scrollPosition = window.pageYOffset;
+    parallaxWrapper.style.backgroundPositionY = (scrollPosition * 0.5) + 'px';
+});
+
+const toggleBtn = document.querySelector(".toggle_btn");
+        const toggleBtnIcon = document.querySelector(".toggle_btn i");
+        const dropDownMenu = document.querySelector(".dropdown_menu");
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle("open");
+            const isOpen = dropDownMenu.classList.contains("open");
+
+            toggleBtnIcon.classList = isOpen
+            ? "fa-solid fa-xmark" 
+: "fa-solid fa-bars"; 
+};
+</script>
+
+</body>
+</html>
